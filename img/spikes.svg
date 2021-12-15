@@ -1,0 +1,8 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <pattern id="polka-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path fill-rule="evenodd" fill="#b22631" d="M0.0,0.0 L9.999,19.999 L9.999,19.999 L19.999,0.0 L0.0,0.0 Z" />
+        </pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"></rect>
+</svg>
