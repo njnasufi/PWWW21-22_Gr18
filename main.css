@@ -1,112 +1,66 @@
-/* GENERAL HEADER */
-header {
-    overflow-x: hidden;
+/* reset of elements */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+}
+.container{
+    /* padding: 21px; */
+    padding: 21px;
 }
 
-/* TOP PART (logo and banner) */
-.header-top {
-    background-color: #000;
-    padding-top: 1.3125rem;
-    padding-bottom: 2.625rem;
-}
-
-.header-top .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* HEADER STYLE */
+header .top {
+    background-color: black;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
-
-.header-top .header-logo div {
-    color: var(--text-500);
-    font-size: 3.75rem;
-    line-height: 1.2em;
-    margin-bottom: 0.5625rem;
+header .logo {
+    font-size: 60px;
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+    text-align: left;
+    text-shadow: 0px 0px 0px rgba(178, 38, 49, 0.41);
 }
-
-.header-top .header-logo p {
-    color: var(--text-700);
-    font-size: 0.75rem;
-    line-height: 1em;
+header .logo p{
+    font-size: 12px;
+    color: rgb(79, 79, 79);
+    line-height: 1;
+    text-align: left;
+    margin-top: 9px;  
 }
-/* END TOP PART (logo and banner) */
-
-/* BOTTOM PART (navigation and search) */
-.header-bottom {
-    position: relative;
-    background-color: var(--primary);
-    padding-top: 1.375rem;
-    padding-bottom: 1.375rem;
-}
-
-.header-bottom::before {
-    content: "";
-    position: absolute;
-    top: -1.25rem;
-    left: 0;
-    width: calc(100% + 1.25rem);
-    height: 1.25rem;
+/* TO-DO: add triangles- spike.svg */
+header .bottom{
+    background-color: rgb(178, 38, 49);
     background-image: url(./img/spikes.svg);
-    -webkit-transform: translateX(-0.625rem) rotate(180deg);
-        -ms-transform: translateX(-0.625rem) rotate(180deg);
-            transform: translateX(-0.625rem) rotate(180deg);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header-bottom .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.header-bottom nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.bottom ul {
     list-style: none;
-}
-
-.header-bottom nav ul li {
-    margin-right: 2.125rem;
-}
-
-.header-bottom nav ul li:last-child {
-    margin-right: 0px;
-}
-
-.header-bottom ul li a {
-    color: #fff;
-    -webkit-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    line-height: 1em;
-    text-decoration: none;
-}
-
-.header-bottom ul li a:hover {
-    color: var(--bg);
-}
-
-/* SEARCH */
-.header-bottom form .form-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
+.bottom ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 32px;
+    font-weight: bold;
+}
 
-.header-bottom form .form-group input {
+.bottom ul li a:hover{
+    color: rgb(26, 26, 26);
+    
+}
+
+.bottom .search-box input{
     background-color: #000;
     border-radius: 0.625rem;
     color: #fff;
@@ -115,44 +69,197 @@ header {
     min-height: 1.875rem;
     min-width: 15rem;
     margin-right: 0.5rem;
+    border: none;
 }
 
-.header-bottom form .form-group input::-webkit-input-placeholder {
-    color: var(--text-600);
-}
-
-.header-bottom form .form-group input::-moz-placeholder {
-    color: var(--text-600);
-}
-
-.header-bottom form .form-group input:-ms-input-placeholder {
-    color: var(--text-600);
-}
-
-.header-bottom form .form-group input::-ms-input-placeholder {
-    color: var(--text-600);
-}
-
-.header-bottom form .form-group input::placeholder {
-    color: var(--text-600);
-}
-
-.header-bottom form .form-group button[type="submit"] {
+.bottom .search-box button {
     background-color: #000;
-    color: var(--primary);
     font-size: 0.875rem;
     line-height: 1.28em;
     text-transform: uppercase;
     padding: 0.625rem 1.5rem 0.625rem 1.1875rem;
     border-radius: 10px;
-    -webkit-transition: background 0.5s ease;
-    -o-transition: background 0.5s ease;
-    transition: background 0.5s ease;
     cursor: pointer;
+    border: none;
+    color: rgb(178, 38, 49);
 }
 
-.header-bottom form .form-group button[type="submit"]:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.bottom .search-box button:hover {
+    color: rgba(255, 255, 255);
 }
 
-/* END BOTTOM PART (navigation and search) */
+
+
+/* MAIN SECTION STYLE */
+main{
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .right{
+    margin-left: 2.3125rem;
+    padding-top: 70px;
+
+}
+main .left{
+    padding-top: 70px;
+    width: 60%;
+}
+
+.left .bottom-text{
+    background-color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1.1875rem 1.0625rem 1.625rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.9375rem;
+    margin-top: 2.3125rem;
+    max-width: 305px;
+}
+
+.left .bottom-text span{
+    text-align: center;
+    margin-left: 1.3125rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    line-height: 1.2em;
+}
+
+
+.right h1{
+    font-size: 84px;
+    line-height: 1;
+    margin-bottom: 3.75rem;
+    font-weight: 400;
+    color: white;
+}
+  
+.right p{
+    color: white;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 70px;
+}
+.right p a{
+    text-decoration: none;
+    color:rgb(178, 38, 49)
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+.feature-top{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.feature > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.feature > div p{
+    margin-bottom: 0;
+    color: #ccc;
+    line-height: 1.3em;
+    font-size: 20px;
+    margin-left: 0.375rem;
+}
+  
+.feature .feature-description{
+    margin-top: 13px;
+    width: 70%;
+    font-size: 0.8125rem;
+    color: #ccc;
+    line-height: 1.3em;
+}
+
+#about-us{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #141414, #353535);
+    color: #acacac;
+    padding-top: 2.5rem;
+    padding-bottom: 1.875rem;
+
+}
+#about-us > div {
+    width: 25%;
+    margin: 0 15px;
+}
+#about-us > div:first-child {
+    margin-left: 0;
+}
+  
+#about-us > div:last-child {
+    margin-right: 0;
+
+}
+#about-us div h3{
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 1.5625rem;
+    color: rgb(172, 172, 172);
+    line-height: 1;
+}
+#about-us div p{
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 1.8;
+}
+.contact-us, .contact-us form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-us form input,
+.contact-us form textarea {
+  background-color: #000;
+  font-size: 0.75rem;
+  color: var(--text-100);
+  line-height: 1.2em;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+  
+.contact-us form button {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 0.625rem 0.8125rem;
+    background-color: #000;
+    float: right !important;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 30px;
+}
+  
+.contact-us form button:hover {
+color:  rgb(178, 38, 49);
+}
+
+
+footer{
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+   
+}
+footer p{
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 1;
+    text-align: left;   
+}
