@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <title>App Alicious</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="top container">
+            <div class="logo">
+                <div>App Alicious</div>
+                <p>Free PSD Website Template</p>
+            </div>
+
+            <div class="header-image">
+                <img
+                    src="https://via.placeholder.com/468x60?text=468 x 60px"
+                />
+            </div>
+        </div>
+        <div class="bottom container">
+            <ul>
+                <li>
+                    <a href="index.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="/about.html" target = "_blank" >About</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Dropdown</a>
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+            </ul>
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    placeholder="Enter Search Term Here"
+                />
+                <button type="submit">Submit</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <h2 id="title">HTML Table</h2>
+
+        <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Antje Muller</td>
+            <td>Maria Anders  <a href="mailto: maria@gmail.com">maria@gmail.com</a></td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang <a href="mailto: maria@gmail.com">franciso@gmail.com</a></td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel <a href="mailto: maria@gmail.com">roland@gmail.com</a></td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett <a href="mailto: maria@gmail.com">helen@gmail.com</a></td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri <a href="mailto: maria@gmail.com">yoshi@gmail.com</a></td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli <a href="mailto: maria@gmail.com">giovani@gmail.com</a></td>
+            <td>Italy</td>
+        </tr>
+    </main>
+
+    
+
+    <script>
+        const parent = document.createElement("a");
+        parent.href = "https://www.uni-pr.edu/"
+        const node = document.createTextNode("  --> This is a link added using JS");
+        parent.appendChild(node);
+        const element = document.getElementById("title");
+        element.appendChild(parent);
+       
+    </script>
+</body>
+</html>

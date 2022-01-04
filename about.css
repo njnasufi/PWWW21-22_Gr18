@@ -1,0 +1,91 @@
+/* reset of elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia";
+  }
+  .container{
+      /* padding: 21px; */
+      padding: 21px;
+  }
+  
+  /* HEADER STYLE */
+  header .top {
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+  }
+  header .logo {
+      font-size: 60px;
+      color: rgb(153, 153, 153);
+      line-height: 1.2;
+      text-align: left;
+      text-shadow: 0px 0px 0px rgba(178, 38, 49, 0.41);
+  }
+  header .logo p{
+      font-size: 12px;
+      color: rgb(79, 79, 79);
+      line-height: 1;
+      text-align: left;
+      margin-top: 9px;  
+  }
+  /* TO-DO: add triangles- spike.svg */
+  header .bottom{
+      background-color: rgb(178, 38, 49);
+      background-image: url(./img/spikes.svg);
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .bottom ul {
+      list-style: none;
+      display: flex;
+  }
+  .bottom ul li a{
+      text-decoration: none;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      line-height: 1;
+      text-align: left;
+      text-transform: uppercase;
+      margin-right: 32px;
+      font-weight: bold;
+  }
+  
+  .bottom ul li a:hover{
+      color: rgb(26, 26, 26);
+      
+  }
+  
+  .bottom .search-box input{
+      background-color: #000;
+      border-radius: 0.625rem;
+      color: #fff;
+      padding: 0.625rem 0.375rem;
+      font-size: 0.875rem;
+      min-height: 1.875rem;
+      min-width: 15rem;
+      margin-right: 0.5rem;
+      border: none;
+  }
+  
+  .bottom .search-box button {
+      background-color: #000;
+      font-size: 0.875rem;
+      line-height: 1.28em;
+      text-transform: uppercase;
+      padding: 0.625rem 1.5rem 0.625rem 1.1875rem;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      color: rgb(178, 38, 49);
+  }
+  
+  .bottom .search-box button:hover {
+      color: rgba(255, 255, 255);
+  }
+  
+  
